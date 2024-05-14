@@ -1,0 +1,24 @@
+@font-face {
+  font-family: inter;
+  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+:root {
+  /* Colors */
+  --Green: hsl(75, 94%, 57%);
+  --Dark-grey: hsl(0, 0%, 12%);
+  --Grey: hsl(0, 0%, 20%);
+  --White: hsl(0, 0%, 100%);
+  --Off-black:hsl(0, 0%, 8%);
+
+  /* Fonts */
+  --Inter-font: "Inter", sans-serif;
+  --Body-font-size: 0.875em;
+}
+
+body {
+  font-family: var(--Inter-font);
+  background: var(--Off-black);
+  color: var(--White);
+}
