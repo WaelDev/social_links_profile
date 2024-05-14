@@ -3,7 +3,6 @@
   src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-
 :root {
   /* Colors */
   --Green: hsl(75, 94%, 57%);
@@ -21,4 +20,64 @@ body {
   font-family: var(--Inter-font);
   background: var(--Off-black);
   color: var(--White);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--Dark-grey);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  /* center card  */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile_image {
+  border-radius: 50%;
+  height: 70px;
+}
+
+.profile_name {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.profile_address {
+  color: var(--Green);
+  font-size: 0.6em;
+  margin-top: 0;
+}
+
+.profile_job_title {
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.social_button {
+  background: var(--Grey);
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 0.6em;
+  font-weight: 600;
+  width: 190px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.social_button:hover {
+  background: var(--Green);
+  color: var(--Off-black);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    padding: 10px;
+  }
 }
